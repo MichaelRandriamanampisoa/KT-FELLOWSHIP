@@ -56,7 +56,7 @@ input[type="password"] {
 }
 
 .links {
-    text-align: center;
+        text-align: -webkit-right;
     margin-top: 15px;
 }
 
