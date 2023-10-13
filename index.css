@@ -1,0 +1,76 @@
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('IMAGE/KT IMAGE.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh; /* Hauteur minimale pour occuper tout l'écran */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Section principale (hero) */
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 10vh 0; /* Utilisation de 10vh pour la hauteur, ajustez selon vos besoins */
+    color: #f1b4b4;
+    flex-grow: 1; /* Fait en sorte que cette section occupe tout l'espace restant en hauteur */
+}
+
+.hero h2 {
+    font-size: 48px;
+}
+
+/* Styles pour le bouton BIENVENUE */
+.btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    animation: blink 2.5s ease-in-out infinite;
+}
+
+/* Définition de l'animation "blink" */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Ajoutez des media queries pour rendre votre site responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+}
