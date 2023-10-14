@@ -1,0 +1,92 @@
+/* Réinitialisation de la mise en page et styles de base */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(IMAGE/Fond\ client.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif; /* Choisissez une police de base lisible */
+}
+
+header {
+    background-color: #acacac;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    display: flex; /* Utilisation de Flexbox pour la navigation */
+    justify-content: center; /* Centre les éléments horizontalement */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Styles pour la classe .container */
+.container {
+    max-width: 100%; /* Ajuste la largeur maximale en fonction de la taille de l'écran */
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Styles pour les écrans de moins de 768px de largeur */
+    header {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Met les éléments de la navigation en colonne */
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    /* Styles pour la classe .container sur les écrans plus petits */
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+}
