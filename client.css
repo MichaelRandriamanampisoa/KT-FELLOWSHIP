@@ -1,5 +1,7 @@
 /* Réinitialisation de la mise en page et styles de base */
-body, h2, p {
+body,
+h2,
+p {
     margin: 0;
     padding: 0;
 }
@@ -15,7 +17,8 @@ body {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    font-family: Arial, sans-serif; /* Choisissez une police de base lisible */
+    font-family: Arial, sans-serif;
+    /* Choisissez une police de base lisible */
 }
 
 header {
@@ -29,8 +32,10 @@ nav ul {
     list-style-type: none;
     padding: 0;
     background-color: #333;
-    display: flex; /* Utilisation de Flexbox pour la navigation */
-    justify-content: center; /* Centre les éléments horizontalement */
+    display: flex;
+    /* Utilisation de Flexbox pour la navigation */
+    justify-content: center;
+    /* Centre les éléments horizontalement */
 }
 
 nav ul li {
@@ -48,7 +53,8 @@ nav ul li a {
 
 /* Styles pour la classe .container */
 .container {
-    max-width: 100%; /* Ajuste la largeur maximale en fonction de la taille de l'écran */
+    max-width: 100%;
+    /* Ajuste la largeur maximale en fonction de la taille de l'écran */
     margin: 20px;
     padding: 20px;
     background-color: #fff;
@@ -69,6 +75,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
     /* Styles pour les écrans de moins de 768px de largeur */
     header {
         padding: 10px;
@@ -76,7 +83,8 @@ footer {
     }
 
     nav ul {
-        flex-direction: column; /* Met les éléments de la navigation en colonne */
+        flex-direction: column;
+        /* Met les éléments de la navigation en colonne */
         text-align: center;
     }
 
@@ -89,4 +97,20 @@ footer {
         margin: 10px;
         padding: 10px;
     }
+}
+
+/* Styles pour les images à l'intérieur de .container */
+.container img {
+    width: 100%;
+    /* Prend la largeur totale du conteneur parent */
+    max-width: 100px;
+    /* Largeur maximale de l'image */
+    height: auto;
+    /* Garde le ratio d'aspect de l'image */
+    display: block;
+    /* Affiche l'image en tant que bloc pour éviter l'espace sous l'image */
+    margin: 10px;
+    /* Centre l'image horizontalement et ajoute une marge de 10px en haut et en bas */
+    border: 5px solid #f70909;
+    border-radius: 25px;
 }
